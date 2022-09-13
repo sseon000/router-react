@@ -4,6 +4,7 @@ import { Routes } from "react-router";
 import About from "./About";
 import Home from "./Home";
 import Profiles from "./Profiles";
+import HistorySample from "./HistorySample";
 
 function App() {
   return (
@@ -18,12 +19,16 @@ function App() {
         <li>
           <Link to="/profiles">프로필 목록</Link>
         </li>
+        <li>
+          <Link to="/history">예제</Link>
+        </li>
       </ul>
       <hr />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/profiles/*" element={<Profiles />} />
+        <Route path="/history" element={<HistorySample />} />
       </Routes>
     </div>
   );
